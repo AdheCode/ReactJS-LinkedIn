@@ -13,7 +13,7 @@ function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
   useEffect(() => {
-    auth.onAuthStateChanged(userAuth => {
+    auth.onAuthStateChanged((userAuth) => {
       if (userAuth){
         // user is logged in
         dispatch(login({
@@ -27,7 +27,7 @@ function App() {
         dispatch(logout())
       }
     })
-  }, []);
+  }, [dispatch]);
   return (
     <div className="app">
       <Header />
