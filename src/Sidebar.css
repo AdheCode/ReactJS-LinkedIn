@@ -67,6 +67,9 @@
     border: 1px solid lightgrey;
     background-color:white;
     border-bottom: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar__premium > p {
@@ -80,6 +83,8 @@
     color: black;
     font-size:12px;
     font-weight: bold;
+    gap: 5px;
+    align-items: center;
 }
 
 .sidebar__myitem {
@@ -132,3 +137,16 @@
     margin-right: 10px;
     margin-left: 5px;
 }
+
+@media (max-width: 425px) { 
+    .sidebar {
+      position: unset;
+      padding: 0px 20px;
+    }
+  }
+
+@media (min-width: 425px) { 
+    .sidebar {
+        min-width: 250px;
+    }
+  }

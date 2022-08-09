@@ -83,3 +83,15 @@
     font-size: 12px;
     text-align: center;
 }
+
+@media (max-width: 768px) { 
+  .rightbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) { 
+  .rightbar {
+    min-width: 400px;
+  }
+}

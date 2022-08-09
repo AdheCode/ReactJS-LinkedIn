@@ -10,7 +10,21 @@
   display: flex;
   width: 100%;
   margin-top: 35px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: 20px;
   margin-right: 20px;
+  flex-direction: row;
+}
+
+@media (max-width: 425px) { 
+  .app__body {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) { 
+  .app__body {
+    margin-right: 0px;
+  }
 }

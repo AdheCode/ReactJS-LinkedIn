@@ -22,3 +22,14 @@
 .headerOption:hover {
     color: black;
 }
+
+@media (max-width: 425px) { 
+    .headerOption {
+        align-items: center;
+        justify-content: center;
+        margin-right:20px;
+    }
+  .headerOption__title {
+    display: none;
+  }
+}
